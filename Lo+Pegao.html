@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de tiempo</title>
+    <style>
+        /* Estilos para la línea de tiempo */
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .year {
+        background-color: #f2f2f2;
+        color: #333;
+        font-size: 14px;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('2000')">2000</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('1990')">1990</div>
+        <div class="year" onclick="mostrarDescripcion('2010')">2010</div>
+    </div>
+    <div id="descripcion"></div>
+
+    <script>
+        // Datos de años y descripciones
+        const datos = {
+            '1990': 'Se fundó la World Wide Web.',
+            '2000': 'El Y2K no causó el apocalipsis informático.',
+            '2010': 'Nacimiento de las redes sociales.'
+        };
+
+        // Función para mostrar la descripción
+        function mostrarDescripcion(anio) {
+            const descripcion = datos[anio];
+            document.getElementById('descripcion').textContent = descripcion;
+        }
+    </script>
+</body>
+</html>
